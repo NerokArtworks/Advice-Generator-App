@@ -14,5 +14,7 @@ const generateNewAdvice = async () => {
     quote.textContent = advice;
 }
 
-// Generate first advice on load
-generateNewAdvice();
+window.onload(() => {
+    // Generate first advice on load
+    generateNewAdvice();
+})
